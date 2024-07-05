@@ -10,4 +10,5 @@ require('plugins.lualine')
 require('plugins.telescope')
 require('plugins.nvim-cmp')
 require('plugins.nvim-lspconfig')
+require('plugins.vim-fugitive')
 
