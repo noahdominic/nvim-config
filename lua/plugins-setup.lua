@@ -54,7 +54,10 @@ require('lazy').setup({
         config = true
         -- use opts = {} for passing setup options
         -- this is equalent to setup({}) function
-    }
+    },
+
+    -- Git wrapper
+    'tpope/vim-fugitive'
 })
 
 
