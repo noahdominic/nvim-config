@@ -14,6 +14,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+    -- Colour theming
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+
     'lukas-reineke/indent-blankline.nvim',
     
     -- Syntax analysis
