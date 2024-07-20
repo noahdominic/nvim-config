@@ -20,3 +20,14 @@ vim.opt.splitright = true
 
 -- Clipboard
 vim.opt.clipboard:append('unnamedplus')
+
+-- Enable the display of special characters
+vim.opt.list = true
+
+-- Set list characters
+vim.opt.listchars = {
+  tab = '>>',
+  trail = '■',
+  nbsp = '+',
+}
+
