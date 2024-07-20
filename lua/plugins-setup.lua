@@ -60,7 +60,10 @@ require('lazy').setup({
     },
 
     -- Git wrapper
-    'tpope/vim-fugitive'
+    'tpope/vim-fugitive',
+
+    -- Git diff
+    {'sindrets/diffview.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }}
 })
 
 
