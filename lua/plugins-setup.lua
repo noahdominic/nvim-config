@@ -18,7 +18,7 @@ require('lazy').setup({
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
     'lukas-reineke/indent-blankline.nvim',
-    
+
     -- Syntax analysis
     {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
 
@@ -37,7 +37,7 @@ require('lazy').setup({
     -- tmux-like navigation
     --     CTRL + (K/L/J/H) (up/right/down/left)
     'christoomey/vim-tmux-navigator',
-    
+
     -- Comment/comment out with gcc (single line) or gc<NUMBER><U{/DOWN>
     'numToStr/Comment.nvim',
 
