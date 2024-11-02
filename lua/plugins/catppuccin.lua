@@ -1,2 +1,2 @@
 -- setup must be called before loading
-vim.cmd.colorscheme "catppuccin-latte"
+vim.cmd.colorscheme "catppuccin-frappe"
