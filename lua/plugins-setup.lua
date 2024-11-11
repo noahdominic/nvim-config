@@ -17,6 +17,8 @@ require('lazy').setup({
     -- Colour theming
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
+    'tpope/vim-sleuth',
+
     'lukas-reineke/indent-blankline.nvim',
 
     -- Syntax analysis
