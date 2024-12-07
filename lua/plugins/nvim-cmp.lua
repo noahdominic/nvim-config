@@ -62,7 +62,7 @@ cmp.setup.cmdline(':', {
     })
 })
 
--- Set up lspconfig.
+-- Set up lspconfigMultdawivers.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 require('lspconfig')['tsserver'].setup {
@@ -75,5 +75,8 @@ require('lspconfig')['gopls'].setup {
     capabilities = capabilities
 }
 require('lspconfig')['clangd'].setup {
+    capabilities = capabilities
+}
+require('lspconfig')['jedi_language_server'].setup {
     capabilities = capabilities
 }
