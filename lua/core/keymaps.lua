@@ -2,6 +2,9 @@ local kmp = vim.keymap
 
 vim.g.mapleader = ' '
 
+-- Replaces
+vim.cmd("command! W w")
+
 kmp.set('n', '<leader>ww', ':w<CR>')
 kmp.set('n', '<leader>wq', ':wq<CR>', { noremap = true, silent = true } )
 kmp.set('n', '<leader>q', ':q<CR>', { noremap = true, silent = true } )
