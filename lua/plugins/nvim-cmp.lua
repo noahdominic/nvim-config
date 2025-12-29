@@ -65,18 +65,31 @@ cmp.setup.cmdline(':', {
 -- Set up lspconfigMultdawivers.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-require('lspconfig')['tsserver'].setup {
-    capabilities = capabilities
+
+vim.lsp.config.tsserver = {
+  capabilities = capabilities,
 }
-require('lspconfig')['rust_analyzer'].setup {
-    capabilities = capabilities
+
+vim.lsp.config.rust_analyzer = {
+  capabilities = capabilities,
 }
-require('lspconfig')['gopls'].setup {
-    capabilities = capabilities
+
+vim.lsp.config.gopls = {
+  capabilities = capabilities,
 }
-require('lspconfig')['clangd'].setup {
-    capabilities = capabilities
+
+vim.lsp.config.clangd = {
+  capabilities = capabilities,
 }
-require('lspconfig')['jedi_language_server'].setup {
-    capabilities = capabilities
+
+vim.lsp.config.jedi_language_server = {
+  capabilities = capabilities,
 }
+
+vim.lsp.enable({
+  "tsserver",
+  "rust_analyzer",
+  "gopls",
+  "clangd",
+  "jedi_language_server",
+})
