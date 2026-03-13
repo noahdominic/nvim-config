@@ -27,6 +27,11 @@ require('lazy').setup({
     -- Language server
     'neovim/nvim-lspconfig',
 
+    -- Getting language servers
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+
     -- Autocomplete
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-buffer', 
