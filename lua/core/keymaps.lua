@@ -25,8 +25,10 @@ kmp.set('n', '<leader>se', '<C-w>=')
 kmp.set('n', '<leader>sx', ':close<CR>')
 
 -- tmux-like tools - TABS
-kmp.set('n', '<leader>tt', ':tabnew<CR>')
+kmp.set('n', '<leader>tn', ':tabnew<CR>')
 kmp.set('n', '<leader>tx', ':tabclose<CR>')
-kmp.set('n', '<leader>tn', ':tabn<CR>')
-kmp.set('n', '<leader>tN', ':tabp<CR>')
+kmp.set('n', '<leader>th', ':tabn<CR>')
+kmp.set('n', '<leader>t<right>', ':tabn<CR>')
+kmp.set('n', '<leader>tl', ':tabp<CR>')
+kmp.set('n', '<leader>t<left>', ':tabp<CR>')
 
